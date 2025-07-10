@@ -1,0 +1,35 @@
+:root {
+  /* Paleta base */
+  --color-bg: #ffffff;
+  --color-text-primary: #000000;
+  --color-gray-dark: #4d4d4d;
+  --color-gray: #999999;
+  --color-gray-light: #e6e6e6;
+  --color-accent: #ffd8b0; /* más cálido que el azul */
+
+  /* Acento (elige uno) */
+/* Uncomment la opción que uses: */
+  --color-accent: #a3c4f3; /* azul pastel */
+/* --color-accent: #ffd8b0;  melocotón pastel */
+/* --color-accent: #a6e3e9;  verde menta pastel */
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-slide {
+  animation: slide 20s linear infinite;
+}
+
+@keyframes kenburns {
+  0%   { transform: scale(1)   translateY(0); }
+  50%  { transform: scale(1.05) translateY(-2%); }
+  100% { transform: scale(1)   translateY(0); }
+}
+.animate-kenburns {
+  animation: kenburns 20s ease-in-out infinite;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
